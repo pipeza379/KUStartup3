@@ -56,10 +56,10 @@ class Home extends Component {
           <Col align="middle">
             <Carousel autoplay={true}>
               <div className="slide1">
-                <img src={slide3} />
+                <img  src={slide3} />
               </div>
               <div className="slide3">
-                <img src={slide4} />
+                <img style={{width:"1000px"}} src={slide4} />
               </div>
               <div className="slide4">
                 <img src={slide} />
