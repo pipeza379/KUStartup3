@@ -112,7 +112,7 @@ class Comparing extends Component {
         // table = [..table, (<Table celled padded>
         //     <Table.Header>
         //         <Table.Row>)
-                    ]
+                    // ]
         for(let i=0;i<sel.length; i++){
                         table = [...table,
 
