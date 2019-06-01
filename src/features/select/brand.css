@@ -6,3 +6,31 @@
     border-radius: 50%;
     display: inline-block;
   }
+
+.row {
+  /* margin-left: 15%;
+  margin-right  : 15%; */
+}
+.ban{
+  width:80%;
+  height:80%;
+  margin-top:10%;
+}
+.btn-product{
+  margin:10px;
+  color: white;
+  background-color:#9FBFCC;
+  border:none;
+  border-radius: 5px;
+  padding: 5px;
+}
+.btn-product:hover{
+  background-color:rgb(145, 202, 224);
+}
+.btn-product:focus{
+  outline: none;
+}
+.btn-select{
+  background-color:#9FBFCC;
+  border: none;
+}

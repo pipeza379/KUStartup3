@@ -1,19 +1,36 @@
 import React, { Component } from 'react'
 import { Card, Row, Col, Button } from 'antd'
+import { Link, Switch, Route } from 'react-router-dom'
+import Compare from '../compare/Compare'
 import './product.css'
+
+import logo1 from '../../asset/icon/product/logo1.svg'
+import logo2 from '../../asset/icon/product/logo2.svg'
+import logo3 from '../../asset/icon/product/logo3.svg'
+import logo4 from '../../asset/icon/product/logo4.svg'
+
+import item00 from '../../asset/icon/product/00.svg'
+import item01 from '../../asset/icon/product/01.svg'
+import item02 from '../../asset/icon/product/02.svg'
+import item03 from '../../asset/icon/product/03.svg'
+import item10 from '../../asset/icon/product/10.svg'
+import item11 from '../../asset/icon/product/11.svg'
+import item13 from '../../asset/icon/product/13.svg'
+import item21 from '../../asset/icon/product/21.svg'
+import item31 from '../../asset/icon/product/31.svg'
 
 const data = [
     {
-        id:"1",
-        name:"abc"        
+        id: "1",
+        name: "abc"
     },
     {
-        id:"2",
-        name:"abb"        
+        id: "2",
+        name: "abb"
     },
     {
-        id:"3",
-        name:"acb"        
+        id: "3",
+        name: "acb"
     }
 ]
 
@@ -62,55 +79,51 @@ class Product extends Component {
     render() {
         return (
             <React.Fragment>
-                <h1 style={{ textAlign: "center" }}>เลือกผลิตภัณฑ์</h1>
+                <Switch>
+                    <Route path="/compare" component={Compare} />
+                </Switch>
+                <h1 style={{ textAlign: "center" }}>เลือกผลิตภัณฑ์ที่คุณต้องการเปรียบเทียบ</h1>
                 <br />
-                {/* <Row gutter={16}>
-                    <Col span={6} align="middle" ><div style={{ border: "1px solid black", height: "100px", width: "100px" }} /></Col>
-                    <Col span={6} align="middle"><div style={{ border: "1px solid black", height: "100px", width: "100px" }} /></Col>
-                    <Col span={6} align="middle"><div style={{ border: "1px solid black", height: "100px", width: "100px" }} /></Col>
-                    <Col span={6} align="middle"><div style={{ border: "1px solid black", height: "100px", width: "100px" }} /></Col>
-                </Row> */}
-                {/* <Row>
-                    <Col style={{ background: '#ECECEC', padding: '30px', width: "80%" }} align="middle">
-                        <Row gutter={16}>
-                            {this.createCard()}
-                        </Row>
-                    </Col>
-                </Row> */}
                 <Row>
                     <Col align="middle">
                         <table>
-                            <tr className="head">
-                                <td colSpan={3}><div style={{ border: "1px solid black", height: "100px", width: "100px" }} /></td>
-                                <td colSpan={3}><div style={{ border: "1px solid black", height: "100px", width: "100px" }} /></td>
-                                <td colSpan={3}><div style={{ border: "1px solid black", height: "100px", width: "100px" }} /></td>
-                                <td colSpan={3}><div style={{ border: "1px solid black", height: "100px", width: "100px" }} /></td>
+                            <tr className="head" style={{ backgroundColor: "#FBDDDD" ,borderBottom:"2px solid white"}}>
+                                <td colSpan={3}><img style={{ padding: "10px", width: "150px" }} src={logo1} /></td>
+                                <td colSpan={3}><img style={{ padding: "10px", width: "150px" }} src={logo2} /></td>
+                                <td colSpan={3}><img style={{ padding: "10px", width: "150px" }} src={logo3} /></td>
+                                <td colSpan={3}><img style={{ padding: "10px", width: "150px" }} src={logo4} /></td>
                             </tr>
-                            <tr>
-                                <td colSpan={3}>1</td>
-                                <td colSpan={3}>Mark</td>
-                                <td colSpan={3}>Otto</td>
-                                <td colSpan={3}>@mdo</td>
+                            <tr className="tbody">
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "20px 10px 10px 20px", width: "150px" }} src={item00} /></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "20px 10px 10px 10px", width: "150px" }} src={item01} /></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "20px 10px 10px 10px", width: "150px" }} src={item02} /></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "20px 10px 10px 10px", width: "150px" }} src={item03} /></td>
+                            </tr >
+                            <tr className="tbody">
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "10px 10px 10px 20px", width: "150px" }} src={item10} /></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "10px", width: "150px" }} src={item11} /></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "10px", width: "150px" }} src={item13} /></td>
                             </tr>
-                            <tr>
-                                <td colSpan={3}>2</td>
-                                <td colSpan={3}>Jacob</td>
-                                <td colSpan={3}>tdornton</td>
-                                <td colSpan={3}>@fat</td>
+                            <tr className="tbody">
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "10px", width: "150px" }} src={item21} /></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}></td>
                             </tr>
-                            <tr>
-                                <td colSpan={3}>2</td>
-                                <td colSpan={3}>Jacob</td>
-                                <td colSpan={3}>tdornton</td>
-                                <td colSpan={3}>@fat</td>
+                            <tr className="tbody">
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "10px 10px 20px 10px", width: "150px" }} src={item31} /></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}></td>
                             </tr>
                         </table>
                     </Col>
                 </Row>
                 <Row>
-                    <Col align="middle" style={{marginTop:"15px"}} >
+                    <Col align="middle" style={{ marginTop: "15px" }} >
                         <Button onClick={() => this.setState({ compare: true })} type="primary" shape="round" icon="download" size="large">
-                            Compare
+                            <Link to="/compare">Compare</Link>
                         </Button>
                     </Col>
                 </Row>

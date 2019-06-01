@@ -1,3 +1,14 @@
-.ant-card.select.ant-card-bordered.ant-card-hoverable {
+/* .ant-card.select.ant-card-bordered.ant-card-hoverable {
     border: 2px solid red;
+} */
+
+#compare{
+    margin:5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+tr th{
+    width: 15%;
+    padding: 0;
 }

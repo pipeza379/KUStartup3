@@ -17,8 +17,56 @@
     line-height: 300px;
     background: #364d79;
     overflow: hidden;
-  }
-  
-  .ant-carousel .slick-slide h3 {
+}
+
+.ant-carousel .slick-slide h3 {
     color: #fff;
-  }
+}
+
+.body {
+    overflow-x: hidden;
+}
+
+.box {
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.box:hover {
+    border: 2px solid rgb(194, 194, 194);
+}
+
+.center {
+    padding: 5px 0px 5px 0;
+    display: block;
+    margin: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 60%;
+}
+
+/* .btn-compare:hover{
+} */
+
+.select{
+    width:80%;
+    margin-right: 10%;
+    margin-left:10%;
+}
+
+.hotitem{
+    background-color:#FBDDDD; 
+    width:80%;
+    margin-right:10%;
+    margin-left:10%;
+}
+
+.ch {
+    padding: 10px 0px 10px 0;
+    display: block;
+    margin: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 60%;
+}

@@ -5,11 +5,13 @@ import { Col, Row } from 'antd'
 
 import Home from './features/home/Home'
 import Compare from './features/compare/Compare'
+import Compare2 from './features/compare/Compare2'
 import Review from './features/review/Review'
 import Brand from './features/select/Brand'
 import SearchInput from './features/search/Search'
 
-import nightcream from './asset/icon/night-cream.svg'
+
+import logo from './asset/icon/mylogo.png'
 
 class Rounter extends Component {
 
@@ -26,11 +28,11 @@ class Rounter extends Component {
         </Row>
         <div className="submenu">
           <Row gutter={24}>
-          <Col span={4}><Link to="/"><img src={nightcream} alt="logo" /></Link></Col>
+            <Col style={{marginTop:"15px",marginLeft:"15px"}} span={4}><Link to="/"><img style={{height: "50px" }} src={logo} alt="logo" /></Link></Col>
             <Col span={15}>
               <SearchInput />
             </Col>
-            <Col>
+            <Col style={{ margin: "15px" }}>
               <Link>Login</Link>
               <Link>Reginster</Link>
             </Col>
@@ -39,6 +41,7 @@ class Rounter extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/compare" component={Compare} />
+          <Route path="/compare2" component={Compare2} />
           <Route path="/brand" component={Brand} />
           <Route path="/review" component={Review} />
         </Switch>

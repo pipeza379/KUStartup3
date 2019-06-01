@@ -56,7 +56,7 @@ class SearchInput extends React.Component {
                 showSearch
                 value={this.state.value}
                 placeholder={"Search"}
-                style={{ margin:"15px",marginLeft:"10%",width: "80%" }}
+                style={{ margin:"15px",width: "100%",border:"2px solid #DE648B",borderRadius:"7px"}}
                 defaultActiveFirstOption={false}
                 // showArrow={false}
                 filterOption={false}
