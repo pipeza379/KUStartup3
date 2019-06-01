@@ -1,13 +1,32 @@
 import React, { Component } from 'react'
 import { Row, Col, Carousel, Button } from 'antd'
+import { Link, Switch, Route } from 'react-router-dom'
+
 import SearchInput from '../search/Search'
+import Compare from '../compare/Compare'
+import Brand from '../select/Brand'
+
 import 'antd/dist/antd.css';
 import './home.css'
+
+
 import nightcream from '../../asset/icon/night-cream.svg'
+
+
 class Home extends Component {
+  constructor() {
+    super()
+    this.state = {
+
+    }
+  }
   render() {
     return (
       <div>
+        <Switch>
+          <Route path="/compare" component={Compare} />
+          <Route path="/brand" component={Brand} />
+        </Switch>
         <Row>
           <Col style={{ margin: "15px" }} align="middle">
             <Carousel autoplay>
@@ -51,7 +70,7 @@ class Home extends Component {
             <Row>
               <Col align="middle" >
                 <Button onClick={() => this.setState({ compare: true })} type="primary" shape="round" icon="download" size="large">
-                  Compare
+                <Link to="/compare">เปรียบเทียบ</Link>
                 </Button>
               </Col>
             </Row>
@@ -63,14 +82,14 @@ class Home extends Component {
             <Col align="middle"><h1>SELECT</h1></Col>
           </Row>
           <Row gutter={16}>
-            <Col span={3} ><img src={nightcream} /></Col>
-            <Col span={3} ><img src={nightcream} /></Col>
-            <Col span={3} ><img src={nightcream} /></Col>
-            <Col span={3} ><img src={nightcream} /></Col>
-            <Col span={3} ><img src={nightcream} /></Col>
-            <Col span={3} ><img src={nightcream} /></Col>
-            <Col span={3} ><img src={nightcream} /></Col>
-            <Col span={3} ><img src={nightcream} /></Col>
+            <Col span={3} ><Link to="/brand"><img src={nightcream} alt="select" /></Link></Col>
+            <Col span={3} ><Link to="/brand"><img src={nightcream} alt="select" /></Link></Col>
+            <Col span={3} ><Link to="/brand"><img src={nightcream} alt="select" /></Link></Col>
+            <Col span={3} ><Link to="/brand"><img src={nightcream} alt="select" /></Link></Col>
+            <Col span={3} ><Link to="/brand"><img src={nightcream} alt="select" /></Link></Col>
+            <Col span={3} ><Link to="/brand"><img src={nightcream} alt="select" /></Link></Col>
+            <Col span={3} ><Link to="/brand"><img src={nightcream} alt="select" /></Link></Col>
+            <Col span={3} ><Link to="/brand"><img src={nightcream} alt="select" /></Link></Col>
           </Row>
         </div>
         <div className="hotitem">
@@ -78,11 +97,12 @@ class Home extends Component {
             <Col align="middle"><h1>HOTITME</h1></Col>
           </Row>
           <Row gutter={32}>
-            <Col span={4}><img src={nightcream} /></Col>
-            <Col span={4}><img src={nightcream} /></Col>
-            <Col span={4}><img src={nightcream} /></Col>
-            <Col span={4}><img src={nightcream} /></Col>
-            <Col span={4}><img src={nightcream} /></Col>
+            <Col span={4} ><Link to="/compare"><img src={nightcream} alt="item" /></Link></Col>
+            <Col span={4} ><Link to="/compare"><img src={nightcream} alt="item" /></Link></Col>
+            <Col span={4} ><Link to="/compare"><img src={nightcream} alt="item" /></Link></Col>
+            <Col span={4} ><Link to="/compare"><img src={nightcream} alt="item" /></Link></Col>
+            <Col span={4} ><Link to="/compare"><img src={nightcream} alt="item" /></Link></Col>
+            <Col span={4} ><Link to="/compare"><img src={nightcream} alt="item" /></Link></Col>
           </Row>
         </div>
         <div className="content">

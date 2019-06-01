@@ -1,0 +1,19 @@
+table {
+    width: 80%;
+    text-align: center;
+    border-top:none;
+    border-bottom:1px solid black;
+}
+
+tr {
+    border-left:1px solid black; 
+    border-right:1px solid black; 
+}
+table tr td {
+    height:100px;
+}
+.head{
+    border-left:none; 
+    border-right:none; 
+   
+}
