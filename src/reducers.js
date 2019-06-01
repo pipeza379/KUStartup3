@@ -1,7 +1,4 @@
-import React, { Component } from 'react'
-import Rounter from './Route'
-
-import Action from './actions'
+import Action from '../actions'
 
 const initialState = {
     data: [],
@@ -39,17 +36,4 @@ function reducer(state = initialState, action) {
             return state
     }
 }
-
-class App extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Rounter/>
-      </React.Fragment>
-    )
-  }
-}
-
-
-export default App;
-                                                         
+export default reducer

@@ -1,0 +1,14 @@
+/* .navbar{
+  margin: 10px;
+  text-align: center;
+} */
+.menu a {
+  padding: 15px;
+  border:1px solid black;
+}
+.submenu a{
+  padding:15px;
+}
+.search{
+  margin:15px;
+}
