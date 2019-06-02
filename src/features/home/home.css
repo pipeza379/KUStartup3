@@ -72,5 +72,6 @@ body {
 }
 
 .btn-compare:hover{
-    background-color: rgb(248, 232, 232)
+    background-color: rgb(248, 232, 232);
+    border:2px solid #DE648B;
 }

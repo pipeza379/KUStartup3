@@ -72,7 +72,7 @@ class Home extends Component {
         </Row>
         <br />
         <Row>
-          <Col align="middle"><h1 style={{color:"#DE648B", margin: "20px" }}>COMPARE</h1></Col>
+          <Col align="middle"><h1 style={{color:"#DE648B", margin: "20px" }}>COMPARE SKIN CARE</h1></Col>
         </Row>
         <Row >
           <div style={{ backgroundColor: "#DCF2F0", margin: "15px", width: "70%", marginLeft: "15%", marginRight: "15%" ,borderRadius:"5px"}}>
@@ -105,7 +105,7 @@ class Home extends Component {
         </Row>
         <div className="select" >
           <Row>
-            <Col align="middle"><h1 style={{color:"#DE648B", margin: "20px" }}>SELECT</h1></Col>
+            <Col align="middle"><h1 style={{color:"#DE648B", margin: "20px" }}>CATEGORIES</h1></Col>
           </Row>
           <Row gutter={16}>
             <Col span={3} ><Link to="/brand"><div className="box"><img className="center" src={foam} alt="select" /></div></Link></Col>
@@ -130,7 +130,7 @@ class Home extends Component {
           <br/>
         </div>
         <Row>
-          <Col align="middle"><h1 style={{color:"#DE648B", margin: "20px" }}>HOT ITEM</h1></Col>
+          <Col align="middle"><h1 style={{color:"#DE648B", margin: "20px" }}>HOT ITEMS</h1></Col>
         </Row>
         <div className="hotitem">
           <Row gutter={32}>
@@ -145,7 +145,7 @@ class Home extends Component {
         <br/>
         <div className="content">
           <Row>
-            <Col align="middle"><h1 style={{color:"#DE648B", margin: "20px" }}>CONTENT</h1></Col>
+            <Col align="middle"><h1 style={{color:"#DE648B", margin: "20px" }}>BLOG</h1></Col>
           </Row>
           <div>
             <Row gutter={16}>
