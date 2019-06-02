@@ -18,24 +18,25 @@ class Rounter extends Component {
   render() {
     return (
       <React.Fragment>
-        <Row>
+        {/* <Row>
           <Col className="menu" align="middle" style={{ width: "70%" }}>
-            {/* <Link to="/">Home</Link> */}
-            {/* <Link to="/compare">Compare</Link>
+            <Link to="/">Home</Link>
+            <Link to="/compare">Compare</Link>
             <Link to="/brand">Brand</Link>
-            <Link to="/review">Review</Link> */}
+            <Link to="/review">Review</Link>
           </Col>
-        </Row>
+        </Row> */}
         <div className="submenu">
           <Row gutter={24}>
             <Col span={3}><Link to="/">
-              <div style={{marginLeft:"40px"}}><img style={{ height: "50px" }} src={logo} alt="logo" /></div></Link></Col>
-            <Col span={17}>
-              <div style={{marginTop:"10px"}}>
-              <SearchInput />
+              <div style={{ marginTop: "5px", marginLeft: "25px" }}><img style={{ height: "50px" }} src={logo} alt="logo" /></div></Link>
+            </Col>
+            <Col span={18}>
+              <div style={{ marginTop: "10px"}}>
+                <SearchInput />
               </div>
             </Col>
-            <Col style={{ padding: "10px 0 10px 10px", margin: "15px",marginTop:"25px" }}>
+            <Col style={{ padding: "10px 0 10px 10px", marginBottom: "15px",marginLeft:"15px", marginTop: "25px" }}>
               <Link>Login</Link>
               <Link>Register</Link>
               {/* <Link>Login</Link>

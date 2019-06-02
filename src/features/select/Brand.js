@@ -70,7 +70,7 @@ class Brand extends Component {
                   <Col align="middle" span={6}><img className="ban" src={ban12} /></Col>
                 </Row>
                 <Row gutter={24}>
-                  <Col align="middle" span={6}><img className="ban" src={ban13} /></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban13} /><input type="checkbox"/></Col>
                   <Col align="middle" span={6}><img className="ban" src={ban14} /></Col>
                   <Col align="middle" span={6}><img className="ban" src={ban15} /></Col>
                   <Col align="middle" span={6}><img className="ban" src={ban16} /></Col>
