@@ -34,7 +34,7 @@ class Rounter extends Component {
             </Col>
             <Col style={{ margin: "15px" }}>
               <Link>Login</Link>
-              <Link>Reginster</Link>
+              <Link>Register</Link>
             </Col>
           </Row>
         </div>

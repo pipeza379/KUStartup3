@@ -77,7 +77,7 @@ class Brand extends Component {
                 </Row>
                 <Row>
                   <Col style={{ margin: "15px" }} align="middle" >
-                    <Button className="btn-select" onClick={() => this.setState(() => { this.setState({ checkClick: false }) })} type="primary" shape="round" size="large"><Link to="/brand/product"><h4>เลือกแบรนด์</h4></Link>
+                    <Button className="btn-select" style={{ backgroundColor: "#9FBFCC", border: "none" }} onClick={() => this.setState(() => { this.setState({ checkClick: false }) })} type="primary" shape="round" size="large"><Link to="/brand/product"><h4>เลือกแบรนด์</h4></Link>
                     </Button>
                   </Col>
                 </Row>

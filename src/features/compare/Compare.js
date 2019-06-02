@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import Filter from './Filter'
-import Comparing from './Comparing'
-import { Col, Row, Table, Button } from 'antd'
+// import Filter from './Filter'
+// import Comparing from './Comparing'
+import { Col, Row, Button } from 'antd'
 import { Link, Switch, Route } from 'react-router-dom'
-import Home from '../home/Home'
+// import Home from '../home/Home'
 
+import './compare.css'
 import item1 from '../../asset/icon/compare/item1.svg'
 import item2 from '../../asset/icon/compare/item2.svg'
 import item3 from '../../asset/icon/compare/item3.svg'
@@ -22,10 +23,10 @@ class Compare extends Component {
   render() {
     return (
       <React.Fragment>
-        <div id="compare">
-          <Switch>
+        <div className="compare">
+          {/* <Switch>
             <Route path="/" component={Home} />
-          </Switch>
+          </Switch> */}
           <table className="table table-bordered" >
             <thead>
               <tr>
@@ -117,7 +118,7 @@ Essence
                 <th scope="row">ราคา</th>
                 <td><img style={{ width: "230px" }} src={price} /></td>
                 <td><img style={{ width: "230px" }} src={price2} /></td>
-                <td><img style={{ width: "230px" }} src={price3} /></td>
+                <td><a href="https://www.konvy.com/estee-lauder/estee-lauder-advanced-night-repair-synchronized-recovery-complex-ii-50ml-3218.html"><img className="click" style={{ width: "230px" }} src={price3} /></a></td>
                 <td><img style={{ width: "230px" }} src={price4} /></td>
               </tr>
 
@@ -127,7 +128,8 @@ Essence
             <Col align="middle" >
               <br />
               <Button style={{ backgroundColor: "#9FBFCC", border: "none" }} onClick={() => this.setState({ other: true })} type="primary" shape="round" size="large">
-                <Link to="/"><h5 style={{ color: "black" }}>เปรียบเทียบสินค้าอื่น</h5></Link>
+                <h5 style={{ color: "black" }}>เปรียบเทียบสินค้าอื่น</h5>
+                            {/* <Link to="/"><h5 style={{ color: "black" }}>เปรียบเทียบสินค้าอื่น</h5></Link> */}
               </Button>
             </Col>
           </Row>

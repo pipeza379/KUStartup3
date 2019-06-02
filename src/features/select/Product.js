@@ -122,8 +122,8 @@ class Product extends Component {
                 </Row>
                 <Row>
                     <Col align="middle" style={{ marginTop: "15px" }} >
-                        <Button onClick={() => this.setState({ compare: true })} type="primary" shape="round" icon="download" size="large">
-                            <Link to="/compare">Compare</Link>
+                        <Button style={{border:"none",backgroundColor:"#FBDDDD"}} onClick={() => this.setState({ compare: true })} type="primary" shape="round" size="large">
+                            <Link to="/compare"><h5>เปรียบเทียบข้อมูล</h5></Link>
                         </Button>
                     </Col>
                 </Row>

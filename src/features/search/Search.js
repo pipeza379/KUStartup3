@@ -7,35 +7,57 @@ const { Option } = Select;
 const data = [
     {
         index: 1,
-        text: "data1",
+        text: "SK-II Facial Treatment Essence",
         description: "descrip1",
         description2: "descrip2",
         filter: ["fil4"],
     },
     {
         index: 2,
-        text: "data2",
+        text: "BIOTHERM Life Plankton Essence",
         description: "descrip1",
         description2: "descrip2",
         filter: ["fil2", "fil3"],
     },
     {
         index: 3,
-        text: "data3",
+        text: "ESTEE LAUDER Advanced Night Repair Synchronized Recovery Complex II",
         description: "descrip1",
         description2: "descrip2",
         filter: ["fil1", "fil4"],
     },
     {
         index: 4,
-        text: "data4",
+        text: "It's Skin Power 10 Formula VC Effecto",
         description: "descrip1",
         description2: "descrip2",
         filter: ["fil2", "fil4"],
+    },
+    {
+        index: 5,
+        text: "ESTEE LAUDER Advanced Night Repair Synchronized Recovery Complex I",
+        description: "descrip1",
+        description2: "descrip2",
+        filter: ["fil1", "fil4"],
+    },
+    {
+        index: 6,
+        text: "SK-I Facial Treatment Essence",
+        description: "descrip1",
+        description2: "descrip2",
+        filter: ["fil4"],
+    },
+    {
+        index: 7,
+        text: "SK-III Facial Treatment Essence",
+        description: "descrip1",
+        description2: "descrip2",
+        filter: ["fil4"],
     }
+
 ]
 
-class SearchInput extends React.Component {
+class SearchInput extends Component {
     state = {
         data: data,
         value: undefined,

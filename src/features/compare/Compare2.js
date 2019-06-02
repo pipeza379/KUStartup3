@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import Filter from './Filter'
-import Comparing from './Comparing'
 import Home from '../home/Home'
 import { Link, Switch, Route } from 'react-router-dom'
 import { Col, Row, Table, Button } from 'antd'
+import './compare.css'
 
 import item2 from '../../asset/icon/compare/item2.svg'
 
@@ -11,14 +10,14 @@ import star2 from '../../asset/icon/compare/star2.svg'
 
 import price2 from '../../asset/icon/compare/shop2.png'
 
-class Compare extends Component {
+class Compare2 extends Component {
     render() {
         return (
             <React.Fragment>
-                <div id="compare">
-                    <Switch>
+                <div className="compare">
+                    {/* <Switch>
                         <Route path="/" component={Home} />
-                    </Switch>
+                    </Switch> */}
                     <table className="table table-bordered" >
                         <thead>
                             <tr>
@@ -74,7 +73,8 @@ class Compare extends Component {
                         <Col align="middle" >
                             <br />
                             <Button style={{ backgroundColor: "#9FBFCC", border: "none" }} onClick={() => this.setState({ other: true })} type="primary" shape="round" size="large">
-                            <Link to="/"><h5 style={{ color: "black" }}>เปรียบเทียบสินค้าอื่น</h5></Link>
+                            <h5 style={{ color: "black" }}>เปรียบเทียบสินค้าอื่น</h5>
+                            {/* <Link to="/"><h5 style={{ color: "black" }}>เปรียบเทียบสินค้าอื่น</h5></Link> */}
                             </Button>
                         </Col>
                     </Row>
@@ -91,4 +91,4 @@ class Compare extends Component {
     }
 }
 
-export default Compare;
+export default Compare2;

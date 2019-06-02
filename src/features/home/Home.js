@@ -28,7 +28,7 @@ import item5 from '../../asset/icon/home/hotitem/hotitem5.png'
 import item6 from '../../asset/icon/home/hotitem/item6.svg'
 
 import slide from '../../asset/icon/home/banner1.PNG'
-// import slide2 from '../../asset/icon/home/slide2.PNG'
+import slide2 from '../../asset/icon/home/banner4.png'
 import slide3 from '../../asset/icon/home/banner2.png'
 import slide4 from '../../asset/icon/home/banner3.png'
 
@@ -55,44 +55,48 @@ class Home extends Component {
         <Row style={{ margin: "15px", width: "70%", marginLeft: "15%", marginRight: "15%" }} >
           <Col align="middle">
             <Carousel autoplay={true}>
+            <div className="slide2">
+                <img style={{width:"1300px"}} src={slide2} />
+              </div>
               <div className="slide1">
-                <img  src={slide3} />
+                <img style={{width:"1300px"}} src={slide3} />
               </div>
               <div className="slide3">
-                <img style={{width:"1000px"}} src={slide4} />
+                <img style={{width:"1300px"}} src={slide4} />
               </div>
               <div className="slide4">
-                <img src={slide} />
+                <img style={{width:"1300px"}} src={slide} />
               </div>
             </Carousel>
           </Col>
         </Row>
         <br />
         <Row>
-          <Col align="middle"><h1 style={{ margin: "20px" }}>COMPARE</h1></Col>
+          <Col align="middle"><h1 style={{color:"#DE648B", margin: "20px" }}>COMPARE</h1></Col>
         </Row>
         <Row >
           <div style={{ backgroundColor: "#DCF2F0", margin: "15px", width: "70%", marginLeft: "15%", marginRight: "15%" }}>
             <Row gutter={16}>
-              <Col align="middle" style={{ margin: "15px", marginBottom: "0" }} span={11}>
-                <SearchInput />
+              <Col align="middle" style={{width:"40%", margin: "15px", marginBottom: "0",marginLeft:"7%" }} span={11}>
+                <SearchInput/>
               </Col>
-              <Col align="middle" style={{ margin: "15px", marginBottom: "0" }} span={11}>
+              <Col align="middle" style={{width:"40%", margin: "15px", marginBottom: "0"}} span={11}>
                 <SearchInput />
               </Col>
             </Row>
             <Row gutter={16}>
-              <Col align="middle" style={{ marginLeft: "15px", marginRight: "15px" }} span={11}>
+              <Col align="middle" style={{width:"40%", marginLeft: "15px", marginRight: "15px",marginLeft:"7%"  }} span={11}>
                 <SearchInput />
               </Col>
-              <Col align="middle" style={{ marginLeft: "15px", marginRight: "15px" }} span={11}>
+              <Col align="middle" style={{width:"40%", marginLeft: "15px", marginRight: "15px" }} span={11}>
                 <SearchInput />
               </Col>
             </Row>
             <Row>
+            <br/>
               <Col align="middle" >
-                <Button className="btn-compare" style={{ backgroundColor: "#FBDDDD", border: "none" }} onClick={() => this.setState({ compare: true })} type="primary" shape="round" size="large">
-                  <Link to="/compare"><h5 style={{ color: "black" }}>เปรียบเทียบ</h5></Link>
+                <Button className="btn-compare" style={{width:"20%", backgroundColor: "#FBDDDD", border: "none" }} onClick={() => this.setState({ compare: true })} type="primary" shape="round" size="large">
+                  <Link to="/compare"><h5 style={{color: "black" }}>เปรียบเทียบ</h5></Link>
                 </Button>
               </Col>
             </Row>
@@ -101,7 +105,7 @@ class Home extends Component {
         </Row>
         <div className="select" >
           <Row>
-            <Col align="middle"><h1 style={{ margin: "20px" }}>SELECT</h1></Col>
+            <Col align="middle"><h1 style={{color:"#DE648B", margin: "20px" }}>SELECT</h1></Col>
           </Row>
           <Row gutter={16}>
             <Col span={3} ><Link to="/brand"><div className="box"><img className="center" src={foam} alt="select" /></div></Link></Col>
@@ -123,9 +127,10 @@ class Home extends Component {
             <Col span={3} ><Link to="/brand"><h4 style={{textAlign:"center"}}>Moisturizer</h4></Link></Col>
             <Col span={3} ><Link to="/brand"><h4 style={{textAlign:"center"}}>Sunscreen</h4></Link></Col>
           </Row>
+          <br/>
         </div>
         <Row>
-          <Col align="middle"><h1 style={{ margin: "20px" }}>HOT ITEM</h1></Col>
+          <Col align="middle"><h1 style={{color:"#DE648B", margin: "20px" }}>HOT ITEM</h1></Col>
         </Row>
         <div className="hotitem">
           <Row gutter={32}>
@@ -137,9 +142,10 @@ class Home extends Component {
             <Col span={4} ><Link to="/compare2"><div className="box2"><img src={item6} className="ch" alt="item" /></div></Link></Col>
           </Row>
         </div>
+        <br/>
         <div className="content">
           <Row>
-            <Col align="middle"><h1 style={{ margin: "20px" }}>CONTENT</h1></Col>
+            <Col align="middle"><h1 style={{color:"#DE648B", margin: "20px" }}>CONTENT</h1></Col>
           </Row>
           <div>
             <Row gutter={16}>
