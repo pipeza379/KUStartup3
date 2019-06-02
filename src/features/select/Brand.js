@@ -52,28 +52,28 @@ class Brand extends Component {
             <Row className="row">
               <div style={{ border: "1px solid black" }}>
                 <Row gutter={24}>
-                  <Col align="middle" span={6}><img className="ban" src={ban1} /></Col>
-                  <Col align="middle" span={6}><img className="ban" src={ban2} /></Col>
-                  <Col align="middle" span={6}><img className="ban" src={ban3} /></Col>
-                  <Col align="middle" span={6}><img className="ban" src={ban4} /></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban1} /><input style={{width:"20px",height:"20px"}} type="checkbox"/></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban2} /><input style={{width:"20px",height:"20px"}} type="checkbox"/></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban3} /><input style={{width:"20px",height:"20px"}} type="checkbox"/></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban4} /><input style={{width:"20px",height:"20px"}} type="checkbox"/></Col>
                 </Row>
                 <Row gutter={24}>
-                  <Col align="middle" span={6}><img className="ban" src={ban5} /></Col>
-                  <Col align="middle" span={6}><img className="ban" src={ban6} /></Col>
-                  <Col align="middle" span={6}><img className="ban" src={ban7} /></Col>
-                  <Col align="middle" span={6}><img className="ban" src={ban8} /></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban5} /><input style={{width:"20px",height:"20px"}} type="checkbox"/></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban6} /><input style={{width:"20px",height:"20px"}} type="checkbox"/></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban7} /><input style={{width:"20px",height:"20px"}} type="checkbox"/></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban8} /><input style={{width:"20px",height:"20px"}} type="checkbox"/></Col>
                 </Row>
                 <Row gutter={24}>
-                  <Col align="middle" span={6}><img className="ban" src={ban9} /></Col>
-                  <Col align="middle" span={6}><img className="ban" src={ban10} /></Col>
-                  <Col align="middle" span={6}><img className="ban" src={ban11} /></Col>
-                  <Col align="middle" span={6}><img className="ban" src={ban12} /></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban9} /><input style={{width:"20px",height:"20px"}} type="checkbox"/></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban10} /><input style={{width:"20px",height:"20px"}} type="checkbox"/></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban11} /><input style={{width:"20px",height:"20px"}} type="checkbox"/></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban12} /><input style={{width:"20px",height:"20px"}} type="checkbox"/></Col>
                 </Row>
                 <Row gutter={24}>
-                  <Col align="middle" span={6}><img className="ban" src={ban13} /><input type="checkbox"/></Col>
-                  <Col align="middle" span={6}><img className="ban" src={ban14} /></Col>
-                  <Col align="middle" span={6}><img className="ban" src={ban15} /></Col>
-                  <Col align="middle" span={6}><img className="ban" src={ban16} /></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban13} /><input style={{width:"20px",height:"20px"}} type="checkbox"/></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban14} /><input style={{width:"20px",height:"20px"}} type="checkbox"/></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban15} /><input style={{width:"20px",height:"20px"}} type="checkbox"/></Col>
+                  <Col align="middle" span={6}><img className="ban" src={ban16} /><input style={{width:"20px",height:"20px"}} type="checkbox"/></Col>
                 </Row>
                 <Row>
                   <Col style={{ margin: "15px" }} align="middle" >

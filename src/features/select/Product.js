@@ -94,26 +94,26 @@ class Product extends Component {
                                 <td colSpan={3}><img style={{ padding: "10px", width: "150px" }} src={logo4} /></td>
                             </tr>
                             <tr className="tbody">
-                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "20px 10px 10px 20px", width: "150px" }} src={item00} /></td>
-                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "20px 10px 10px 10px", width: "150px" }} src={item01} /></td>
-                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "20px 10px 10px 10px", width: "150px" }} src={item02} /></td>
-                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "20px 10px 10px 10px", width: "150px" }} src={item03} /></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "20px 10px 10px 20px", width: "150px" }} src={item00} /><input style={{width:"15px",height:"15px"}} type="checkbox"/></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "20px 10px 10px 10px", width: "150px" }} src={item01} /><input style={{width:"15px",height:"15px"}} type="checkbox"/></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "20px 10px 10px 10px", width: "150px" }} src={item02} /><input style={{width:"15px",height:"15px"}} type="checkbox"/></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "20px 10px 10px 10px", width: "150px" }} src={item03} /><input style={{width:"15px",height:"15px"}} type="checkbox"/></td>
                             </tr >
                             <tr className="tbody">
-                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "10px 10px 10px 20px", width: "150px" }} src={item10} /></td>
-                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "10px", width: "150px" }} src={item11} /></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "10px 10px 10px 20px", width: "150px" }} src={item10} /><input style={{width:"15px",height:"15px"}} type="checkbox"/></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "10px", width: "150px" }} src={item11} /><input style={{width:"15px",height:"15px"}} type="checkbox"/></td>
                                 <td colSpan={3} style={{ borderLeft: "2px solid white" }}></td>
-                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "10px", width: "150px" }} src={item13} /></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "10px", width: "150px" }} src={item13} /><input style={{width:"15px",height:"15px"}} type="checkbox"/></td>
                             </tr>
                             <tr className="tbody">
                                 <td colSpan={3} style={{ borderLeft: "2px solid white" }}></td>
-                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "10px", width: "150px" }} src={item21} /></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "10px", width: "150px" }} src={item21} /><input style={{width:"15px",height:"15px"}} type="checkbox"/></td>
                                 <td colSpan={3} style={{ borderLeft: "2px solid white" }}></td>
                                 <td colSpan={3} style={{ borderLeft: "2px solid white" }}></td>
                             </tr>
                             <tr className="tbody">
                                 <td colSpan={3} style={{ borderLeft: "2px solid white" }}></td>
-                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "10px 10px 20px 10px", width: "150px" }} src={item31} /></td>
+                                <td colSpan={3} style={{ borderLeft: "2px solid white" }}><img style={{ padding: "10px 10px 20px 10px", width: "150px" }} src={item31} /><input style={{width:"15px",height:"15px"}} type="checkbox"/></td>
                                 <td colSpan={3} style={{ borderLeft: "2px solid white" }}></td>
                                 <td colSpan={3} style={{ borderLeft: "2px solid white" }}></td>
                             </tr>
