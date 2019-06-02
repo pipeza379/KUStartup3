@@ -75,7 +75,7 @@ class Home extends Component {
           <Col align="middle"><h1 style={{color:"#DE648B", margin: "20px" }}>COMPARE</h1></Col>
         </Row>
         <Row >
-          <div style={{ backgroundColor: "#DCF2F0", margin: "15px", width: "70%", marginLeft: "15%", marginRight: "15%" }}>
+          <div style={{ backgroundColor: "#DCF2F0", margin: "15px", width: "70%", marginLeft: "15%", marginRight: "15%" ,borderRadius:"5px"}}>
             <Row gutter={16}>
               <Col align="middle" style={{width:"40%", margin: "15px", marginBottom: "0",marginLeft:"7%" }} span={11}>
                 <SearchInput/>

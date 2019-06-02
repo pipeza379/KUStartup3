@@ -28,13 +28,18 @@ class Rounter extends Component {
         </Row>
         <div className="submenu">
           <Row gutter={24}>
-            <Col style={{marginTop:"15px",marginLeft:"15px"}} span={4}><Link to="/"><img style={{height: "50px" }} src={logo} alt="logo" /></Link></Col>
-            <Col span={15}>
+            <Col span={3}><Link to="/">
+              <div style={{marginLeft:"40px"}}><img style={{ height: "50px" }} src={logo} alt="logo" /></div></Link></Col>
+            <Col span={17}>
+              <div style={{marginTop:"10px"}}>
               <SearchInput />
+              </div>
             </Col>
-            <Col style={{ margin: "15px" }}>
+            <Col style={{ padding: "10px 0 10px 10px", margin: "15px",marginTop:"25px" }}>
               <Link>Login</Link>
               <Link>Register</Link>
+              {/* <Link>Login</Link>
+              <Link>Register</Link> */}
             </Col>
           </Row>
         </div>
